@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ecommerce</title>
+<meta charset="Utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    
+<div id="entire_page">  
+    
+<header>   
+<div class="full_header">
+    
+    <div class="col_1">
+    <img class="logo" src="images/logo.svg">
+    </div>
+    
+<div class="col_1_nav">
+    <nav>
+    <ul class="menu">
+    <li>Collections</li>
+    <li>Men</li>
+    <li>Women</li>
+    <li>About</li>
+    <li>Contact</li>
+    </ul>
+    </nav>
+</div>
+    
+    <div class="col_2">
+    <img class="photo" src="images/image-avatar.png">
+    </div>
+    
+    <div class="col_3">
+    <img class="cart" src="images/icon-cart.svg">
+    </div>
+
+    <hr class="header_hr" size="1px" width=100% >    
+</div>
+  </header>
+    
+    <div id="content">
+    
+                <div class="sides">
+            
+                                    <div class="l_side">
+        <img src="images/image-product-1.jpg">
+            
+            <div class="small_img">
+            
+            <div class="e_part">
+        <img src="images/image-product-1-thumbnail.jpg" class="e_part_col" onclick="opendemo();currentSlide(1)">
+            </div>
+            
+            <div class="e_part">
+        <img src="images/image-product-2-thumbnail.jpg" class="e_part_col" onclick="opendemo();currentSlide(1)">
+            </div>
+            
+            <div class="e_part">
+        <img src="images/image-product-3-thumbnail.jpg" class="e_part_col" onclick="opendemo();currentSlide(1)">
+            </div>
+            
+            <div class="e_part">
+        <img src="images/image-product-4-thumbnail.jpg" class="e_part_col" onclick="opendemo();currentSlide(1)">
+        </div>
+        
+        </div>
+                                    </div>
+            
+            <div class="l_side">
+         <h6>SNEAKER COMPANY</h6>
+            <h1><strong>Fall Limited Edition Sneakers</strong></h1>
+            <p>These low-profile sneakers ae your perfect casual wear companion. Featruring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            
+            <h3>$125.00    <span> 50%</span></h3>
+            <h4><del>$250.00</del></h4>
+            
+           
+            <div class="num">
+            <span class="minus">-</span>
+            <span class="no">0</span>
+            <span class="plus">+</span>
+            
+            <script>
+                const plus = document.querySelector(".plus");
+                const minus = document.querySelector(".minus");
+                const num = document.querySelector(".no");
+
+                let a = 1;
+
+                plus.addEventListener("click", () => {
+                  a++;
+                  a = a < 10 ? "0" + a : a;
+                  num.innerText = a;
+                });
+
+                minus.addEventListener("click", () => {
+                  if (a > 1) {
+                    a--;
+                    a = a < 10 ? "0" + a : a;
+                    num.innerText = a;
+                  }
+                });
+              </script>
+            </div>
+                     
+            <button id="button" > Add To Cart</button>  
+                
+                <div id="tot" class="tot1">
+                 <div class="cart_content">
+                     <div class="cart_header">
+                     <span class="close">&times;</span>
+                         <h2>Cart details</h2>
+                     </div>
+                <div class="cart_info">
+                    <p> <strong>Fall Limited Edition Sneakers</strong> <br> from <i>SNEAKER COMPANY</i> <br>Your details are added and Proceed with Further details..)</p>
+                </div>
+                </div>
+                
+                <script>
+                var modal = document.getElementById("tot");
+                var btn = document.getElementById("button");
+                var span = document.getElementsByClassName("close")[0];
+                
+                btn.onclick = function(){
+                    modal.style.display = "block";
+                }
+                
+                span.onclick = function(){
+                    modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+                }
+                </script>
+                </div>
+                </div>
+      
+ <div id="demoid" class="democlass">
+                
+       <span class="close_cur" onclick="closedemo()">&times;</span>
+                
+<div class="demo_content">
+
+    <div class="main_img">
+      <img src="images/image-product-1-thumbnail.jpg" style="width:100%">
+    </div>
+
+    <div class="main_img">
+      <img src="images/image-product-2-thumbnail.jpg" style="width:100%">
+    </div>
+
+    <div class="main_img">
+      <img src="images/image-product-3-thumbnail.jpg" style="width:100%">
+    </div>
+    
+    <div class="main_img">
+      <img src="images/image-product-4-thumbnail.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    
+    <div class="e_part">
+      <img class="small_disp" src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    
+        <div class="e_part">
+      <img class="small_disp" src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)"> 
+    </div>
+    
+        <div class="e_part">
+      <img class="small_disp" src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    
+        <div class="e_part">
+      <img class="small_disp" src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+            
+  
+     </div>
+ </div>
+    </div> 
+    </div>
+        
+    <script>
+        
+        
+function opendemo() {
+  document.getElementById("demoid").style.display = "block";
+}
+
+function closedemo() {
+  document.getElementById("demoid").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("main_img");
+  var dots = document.getElementsByClassName("small_disp");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+        
+    </script>
+</body>
+</html>

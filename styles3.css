@@ -1,0 +1,391 @@
+#entire_page{
+    
+    max-width:1100px;
+    margin:auto;
+    height: 680px;
+    border:4px solid white; 
+    box-shadow:1px 5px white;
+    background-color: white;
+    text-align:left;
+}
+
+body{
+    background-color:lightgray;
+    margin-top:50px;
+    margin-bottom: 40px;
+}
+header{
+ height: 80px; 
+ margin-top: 20px;
+}
+
+.full_header{
+margin:auto;
+width:75%;
+}
+
+.header_hr{
+width:100%;
+background-color:darkgray;
+}
+
+.logo{
+height: 20px;
+margin:auto;
+margin-left: 0;
+padding-top: 20px;
+}
+
+.menu li{
+list-style: none;
+color:darkgray;
+padding-top: 5px;
+display: inline-block;
+margin-right: 15px;
+text-align: center;
+}
+
+.col_1{
+float: left;
+width:15%;
+margin: auto;
+display:flex;
+margin-bottom: 30px;
+}
+
+.col_1_nav{
+float: left;
+width:50%;
+    margin-bottom: 30px;
+margin: auto;
+display:flex;
+padding-bottom: 30px;
+}
+
+.col_1_nav ul li:hover{
+    border-bottom: 3px solid orange;
+}
+
+.col_2{
+    float:right;
+    width:2.5%;
+    margin-right: 0;
+}
+
+.col_2 .photo{
+    height: 35px;
+    margin: auto;
+    padding-top:12px;
+}
+
+.col_3{
+    float:right;
+    width:2%;
+    margin-right: 40px;
+}
+.col_3 .cart{
+    padding-top:20px;
+    margin:auto; 
+}
+
+#content{
+   padding-top: 60px; 
+   width:100%;
+   clear: both;
+}
+#content .sides{
+    width:70%;
+    margin:auto; 
+    overflow: auto;
+}
+
+.sides .l_side{
+float:left;
+width: 48%; 
+cursor: pointer;
+}
+
+#content .sides .l_side img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.l_side .small_img{
+   width:48%
+   margin:auto;
+   overflow: auto;
+  display: flex;
+justify-content: space-between;
+}
+
+.e_part{
+    float:left;
+    width:21%;  
+}
+
+.small_img .e_part .e_part_col{
+    width:100%;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.l_side h6{
+    padding-left: 90px;
+    color:darksalmon;
+}
+
+.l_side h1{
+    padding-left: 90px;
+    font-size: 32px;
+    font-family: sans-serif; 
+}
+
+.l_side p{
+    position:relative;
+    padding-left: 90px;
+    font-family: sans-serif; 
+    color:darkgrey;
+    line-height: 1.7em;
+    font-size: 12px;
+}
+
+.l_side h3,h4{
+    margin:4px 0;
+    padding-left: 90px;
+    font-family: sans-serif;
+}
+
+.l_side h4{
+    padding-left: 90px;
+    font-family: sans-serif;
+    color:lightgray;
+}
+
+.l_side h3 span{
+    font-size:13px; 
+    color:sandybrown; 
+    padding:5px 5px; 
+    border lpx solid bisque;
+    background-color:antiquewhite;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.l_side .num{
+    height: 45px;
+    width:155px;
+   display:flex;
+    margin-left: 90px;
+    text-align: center;
+    justify-content: center;
+    background-color:aliceblue;
+    border-radius:12px;
+     margin-top:20px;
+}
+
+.num span{
+    width:100%;
+    color:black;
+    font-size:30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    cursor:pointer;
+    padding:center;
+}
+
+ .num span.minus{
+    color:coral;
+}
+
+.num span.plus{
+    color:coral;
+}
+
+ #button{
+  background-color: darkorange;
+  padding:10px 55px;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+    margin:25px 90px;
+}
+
+.row > .e_part {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The demo-background */
+.democlass {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Demo Content */
+.demo_content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 10px;
+  width: 25%;
+  max-width: 1200px;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close_cur {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close_cur:hover,
+.close_cur:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+img {
+  margin-bottom: 4px;
+  border-radius: 10px;
+}
+
+.small_disp {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+ .tot1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.tot1 .cart_content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.cart_content .cart_header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.cart_content .cart_info {
+padding: 2px 16px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
